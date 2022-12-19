@@ -11,10 +11,8 @@ function App() {
       <div className="container">
         <img src= {image} width= "120px" alt="pen"/>
       </div>
-      
       <List />
-      
-    </div>
+      </div>
   );
 }
 

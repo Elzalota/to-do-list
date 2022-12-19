@@ -9,7 +9,6 @@ export class List extends Component {
 
     onChangeEvent(e) {
         this.setState({userInput:e})
-        
     }
 
     addItem (input){
@@ -37,37 +36,28 @@ export class List extends Component {
         e.preventDefault();
     }
 
-    
-
     render () {
         return (
             <div className="inputContainer">
             <form onSubmit={this.onFormSubmit}>
             <div className="container">
-                
-                    <input type="text"
-                    placeholder="What needs to be done?"
-                    onChange={(e) => {this.onChangeEvent(e.target.value)}}
-                    value={this.state.userInput} />
+                <input type="text"
+                placeholder="What needs to be done?"
+                onChange={(e) => {this.onChangeEvent(e.target.value)}}
+                value={this.state.userInput} />
                         
-                    
-                        <button onClick={() => this.addItem(this.state.userInput)} className='btn add' >+</button>
-                    
-                    </div>  
-
-                    <ul>
-                        {this.state.list.map((item, index) => (
-                            <li onClick={this.crossedWord} key={index}>{item} </li>
-                        ))}
-                    </ul>
-                    
-                    <div className="container">
-                        <button onClick={() => this.deleteItem()} className='btn delete'>DELETE</button>
-                    </div>
+                <button onClick={() => this.addItem(this.state.userInput)} className='btn add' >+</button>
+            </div>  
+            <ul>
+                {this.state.list.map((item, index) => (
+                <li onClick={this.crossedWord} key={index}>{item} </li>
+                ))}
+            </ul>
+            <div className="container">
+                <button onClick={() => this.deleteItem()} className='btn delete'>DELETE</button>
+            </div>
             </form>
             </div>
-               
-            
         )
     }
 }
