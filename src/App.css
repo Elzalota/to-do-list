@@ -29,21 +29,21 @@ h1::first-letter {
 input {
   margin-top: 10px;
   font-size: 16px;
-    background-color:#EBECF0;
-    padding: 12px;
-    width: 450px;
-    outline: none;
-    border-radius: 20px;
-    color: #61677C;
-    box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #fff;
-    transition: all 0.2s ease-in-out;
-    box-sizing: border-box;
-    border: none;
-    text-shadow: 1px 1px 0 white;
-    appearance: none;
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
+  background-color:#EBECF0;
+  padding: 12px;
+  width: 450px;
+  outline: none;
+  border-radius: 20px;
+  color: #61677C;
+  box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #fff;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  border: none;
+  text-shadow: 1px 1px 0 white;
+  appearance: none;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 input:focus {
   box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
